@@ -6,7 +6,7 @@
 /*   By: mteffahi <mteffahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:25:21 by mteffahi          #+#    #+#             */
-/*   Updated: 2025/04/14 21:25:03 by mteffahi         ###   ########.fr       */
+/*   Updated: 2025/04/16 16:08:02 by mteffahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	send_byte(int pid, char c)
 			kill(pid, SIGUSR1);
 		else
 			kill(pid, SIGUSR2);
-		usleep(100);
+		usleep(300);
 		i--;
 	}
 }
@@ -60,7 +60,8 @@ int	main(int argc, char **argv)
 			send_byte(pid, argv[2][i]);
 			i++;
 		}
-		send_byte(pid, '\n');
+		// send_byte(pid, '\n');
+		send_byte(pid, '\0');
 	}
 	else
 	{
