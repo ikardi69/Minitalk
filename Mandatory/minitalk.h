@@ -18,9 +18,9 @@
 # include <stdlib.h>
 # define LL_MAX 9223372036854775807LL
 
-int     ft_atoi(const char *str);
-int     check_arg(char *pid);
-void    ft_putstr_fd(char *s, int fd);
+int		ft_atoi(const char *str);
+int		check_arg(char *pid);
+void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar(char c);
 void	ft_putnbr(int n);
 
