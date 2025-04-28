@@ -6,7 +6,7 @@
 /*   By: mteffahi <mteffahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:18:43 by mteffahi          #+#    #+#             */
-/*   Updated: 2025/04/20 16:59:02 by mteffahi         ###   ########.fr       */
+/*   Updated: 2025/04/27 18:07:59 by mteffahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int		check_arg(char *pid);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar(char c);
 void	ft_putnbr(int n);
+void	kll_f(void);
 
 #endif 

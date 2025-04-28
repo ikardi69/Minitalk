@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putchar.c                                          :+:      :+:    :+:   */
+/*   tools2_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mteffahi <mteffahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/14 18:26:28 by mteffahi          #+#    #+#             */
-/*   Updated: 2025/04/27 17:01:44 by mteffahi         ###   ########.fr       */
+/*   Created: 2025/04/27 18:05:39 by mteffahi          #+#    #+#             */
+/*   Updated: 2025/04/27 18:09:07 by mteffahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
-void	ft_putchar(char c)
+void	kll_f(void)
 {
-	write(1, &c, 1);
+	ft_putstr_fd("Error\n", 2);
+	exit(1);
 }

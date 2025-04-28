@@ -6,7 +6,7 @@
 /*   By: mteffahi <mteffahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:25:21 by mteffahi          #+#    #+#             */
-/*   Updated: 2025/04/20 16:59:43 by mteffahi         ###   ########.fr       */
+/*   Updated: 2025/04/27 18:11:00 by mteffahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,15 @@ void	send_byte(pid_t pid, char c)
 	{
 		g_ack = 0;
 		if (!((c >> i) & 1))
-			kill(pid, SIGUSR1);
+		{
+			if (kill(pid, SIGUSR1) == -1)
+				kll_f();
+		}
 		else
-			kill(pid, SIGUSR2);
+		{
+			if (kill(pid, SIGUSR2) == -1)
+				kll_f();
+		}
 		while (!g_ack)
 			pause();
 		i--;
@@ -79,7 +85,7 @@ int	main(int argc, char **argv)
 			return (1);
 		server_pid = ft_atoi(argv[1]);
 		if (server_pid < 0)
-			return (ft_putstr_fd("ERROR : PID cant be a negative number.\n", 2)
+			return (ft_putstr_fd("ERROR : PID cant be a negative number.\n", 2),
 				1);
 		sa.sa_handler = rep_handler;
 		sigemptyset(&sa.sa_mask);

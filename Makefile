@@ -22,11 +22,13 @@ SRCS_SERV_BNS = $(BONUS_DIR)server_bonus.c \
 
 SRCS_CL = $(MANDATORY_DIR)client.c \
 		$(MANDATORY_DIR)tools.c \
-		$(MANDATORY_DIR)putchar.c
+		$(MANDATORY_DIR)putchar.c \
+		$(MANDATORY_DIR)tools2.c
 
 SRCS_CL_BNS = $(BONUS_DIR)client_bonus.c \
 			$(BONUS_DIR)tools_bonus.c \
-			$(BONUS_DIR)putchar_bonus.c
+			$(BONUS_DIR)putchar_bonus.c \
+			$(BONUS_DIR)tools2_bonus.c
 
 OBJS_SERV = $(SRCS_SERV:.c=.o)
 OBJS_CL = $(SRCS_CL:.c=.o)
