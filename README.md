@@ -53,7 +53,7 @@ Installation & Build
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/minitalk.git
+git clone https://github.com/ikardi69/Minitalk.git
 cd minitalk
 make
 This will compile two executables:
