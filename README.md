@@ -117,6 +117,7 @@ Signal encoding logic for converting characters to binary and transmitting bit-b
   
 Here’s a visual overview of the signal-based communication:
 
+
 +---------+                          +---------+
 |         |  SIGUSR1 / SIGUSR2 -->   |         |
 | Client  |------------------------->| Server  |
