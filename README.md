@@ -114,13 +114,9 @@ Signal encoding logic for converting characters to binary and transmitting bit-b
 <p align="center">
   <h1>🧩 Architecture Diagram</h1>
 </p
-  
-
-Here’s a visual overview of the signal-based communication:
-
-![Signal Diagram](./path-to-your-image/diagram.png)
 
 Message sent bit-by-bit using UNIX signals
+Here’s a visual overview of the signal-based communication:
 ![image](https://github.com/user-attachments/assets/11ffafba-9037-4f2b-bb8d-56c664128fe4)
 
 <p align="center">
