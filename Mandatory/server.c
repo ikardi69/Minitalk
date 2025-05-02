@@ -6,20 +6,31 @@
 /*   By: mteffahi <mteffahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 16:16:24 by mteffahi          #+#    #+#             */
-/*   Updated: 2025/04/28 15:18:29 by mteffahi         ###   ########.fr       */
+/*   Updated: 2025/04/30 19:03:59 by mteffahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
+void	ft_reset(char *c, int *i)
+{
+	*c = 0;
+	*i = 0;
+}
+
 void	signal_handler(int sig, siginfo_t *info, void *n)
 {
-	static int	i = 0;
-	static	int old_pid;
-	static char	c = 0;
+	static int	i;
+	static int	old_pid;
+	static char	c;
 
 	(void)n;
-	old_pid = info->si_pid;
+	if (old_pid != info->si_pid)
+	{
+		ft_reset(&c, &i);
+		ft_putstr_fd("\n--> : ", 1);
+		old_pid = info->si_pid;
+	}
 	if (sig == SIGUSR2)
 		c |= (1 << (7 - i));
 	i++;
