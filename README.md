@@ -127,4 +127,6 @@ Here’s a visual overview of the signal-based communication:
   <h1>Mouhssine</h1>
 </p>
 
-1337 Student
+<p align="center">
+  <h1>1337 Student</h1>
+</p>
