@@ -123,6 +123,8 @@ Here’s a visual overview of the signal-based communication:
   <h1>👤 Author</h1>
 </p>
 
-Mouhssine
+<p align="center">
+  <h1>Mouhssine</h1>
+</p>
 
 1337 Student
