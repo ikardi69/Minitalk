@@ -120,11 +120,16 @@ Here’s a visual overview of the signal-based communication:
 ![image](https://github.com/user-attachments/assets/11ffafba-9037-4f2b-bb8d-56c664128fe4)
 
 <p align="center">
-  <h1>Example of mandatory part</h1>
+  <h1>Examples</h1>
 </p
+
+  Mandatory
 
 ![image](https://github.com/user-attachments/assets/07e6287f-e02c-459b-b03c-f75f062f49fe)
 
+  Bonus
+
+![image](https://github.com/user-attachments/assets/f00e8a25-6bb6-42f7-bf70-19d71064ff2c)
 
 <p align="center">
   <h1>👤 Author</h1>
