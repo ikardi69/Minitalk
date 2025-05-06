@@ -1,5 +1,8 @@
 <h1 align="center">🛰️ Minitalk</h1>
 
+![Language](https://img.shields.io/badge/language-C-blue)
+![Version](https://img.shields.io/badge/version-16.3-orange)
+
 
 A minimalist client-server communication program using UNIX signals. This project was developed as part of the 42 curriculum and was evaluated as outstanding, including bonus features such as Unicode support and server acknowledgments.
 
